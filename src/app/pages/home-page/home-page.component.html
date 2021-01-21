@@ -1,22 +1,29 @@
-<!-- <div id="home" style="background-image: url('assets/images/Formal (8).png');"> -->
+
 <div id="home">
     <div fxLayout="row" fxFill>
-        <div class="container-1" fxFlex>
-            <!-- <div class="picture"> -->
-            <img id="myself" src="assets/images/formal.png">
-            <!-- </div> -->
+        <div class="container-1" fxFlex fxLayoutAlign="row" fxLayoutAlign="none end" fxShow.lg fxHide>
+            <div fxFlex="10"></div>
+            <div><img id="myself" src="assets/images/formal.png"></div>
         </div>
-        <div class="container-2" fxFlex fxLayout="row" fxLayoutAlign="center center">
+        <div class="container-2" fxFlex fxLayout="row" fxLayoutAlign="start center" fxFill>
             <div>
-                <h1 class="name">
+                <div fxLayout="row" fxLayoutGap="10px">
+                    <button class="social-media-button" fxLayout="row" fxLayoutAlign="center center">
+                        <img src="assets/icons/facebook.png" class="social-media-icon">
+                    </button>
+                    <button class="social-media-button" fxLayout="row" fxLayoutAlign="center center">
+                        <img src="assets/icons/twitter.png" class="social-media-icon">
+                    </button>
+                    <button class="social-media-button" fxLayout="row" fxLayoutAlign="center center">
+                        <img src="assets/icons/instagram.png" class="social-media-icon">
+                    </button>
+                </div>
+                <h1 class="name custom-h1">
                     HELLO. I'M ALEC SISON.
                 </h1>
-                <h2 class="message">
+                <h2 class="message custom-h2">
                     WELCOME TO MY PAGE.
                 </h2>
-                <button class="proceed">
-                    <span>KNOW MORE </span>
-                </button>
             </div>
         </div>
     </div>

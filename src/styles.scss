@@ -7,7 +7,41 @@
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
-@include mat-core();
+
+
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+
+$custom-typography-1: mat-typography-config(
+  $font-family: 'Potta One, cursive',
+  $headline: mat-typography-level(32px, 48px, 700),
+  $body-1: mat-typography-level(16px, 24px, 500)
+);
+
+$custom-typography-2: mat-typography-config(
+  $font-family: 'Julius Sans One, sans-serif',
+  $headline: mat-typography-level(32px, 48px, 700),
+  $body-1: mat-typography-level(16px, 24px, 500)
+);
+
+.custom-h1 {
+  font-size: mat-font-size($custom-typography-1, headline);
+  font-family: mat-font-family($custom-typography-1);
+}
+
+.custom-h2 {
+  font-size: mat-font-size($custom-typography-1, title);
+  font-family: mat-font-family($custom-typography-1);
+}
+
+.custom-nav {
+  font-size: mat-font-size($custom-typography-2, headline);
+  font-family: mat-font-family($custom-typography-2);
+  font-weight: bold;
+}
+
+// @include mat-core($custom-typography);
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker

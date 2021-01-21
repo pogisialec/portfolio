@@ -1,27 +1,23 @@
  .top-nav-item {
-    color: #264E86;
-    padding: 12px 20px;
+    color: white;
+    padding: 13px 20px;
     outline: none;
     border: none;
     background: none;
     cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 13px;
 }
 
 .top-nav-item:hover {
-    background-color:rgba(88, 210, 255, 0.300);
-    border-radius: 10px;
-    // color: white;
+    background-color:rgba(80, 80, 80, 0.3);
+    border-radius: 5px;
+    color: rgb(180, 180, 180);
 }
 
 .mat-toolbar {
     position: sticky;
     position: -webkit-sticky;
-    // background-color: rgba(41, 41, 41, 0.767);
-    // background-color:rgb(215, 244, 255);
     background-color: transparent;
-    // background-color: white;
     top: 0;
     z-index: 1000;
 }
