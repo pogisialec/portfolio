@@ -13,15 +13,16 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
-
-
-
+import { MatButtonModule } from '@angular/material/button';
+import { ProjectPageComponent } from './pages/project-page/project-page.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomePageComponent
+    HomePageComponent,
+    ProjectPageComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +32,9 @@ import { MatIconModule } from '@angular/material/icon';
     MatToolbarModule,
     MatListModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
