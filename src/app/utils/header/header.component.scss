@@ -15,8 +15,7 @@
 }
 
 .mat-toolbar {
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
     background-color: transparent;
     top: 0;
     z-index: 1000;

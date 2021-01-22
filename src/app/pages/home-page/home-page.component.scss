@@ -1,37 +1,89 @@
 #home {
     height: 100vh;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: 0;
-    background-size: cover;
-    background-color: #2d3436;
-    background-image: linear-gradient(500deg, #313638 5%, #161616 80%);
+    background-color: #161616;
 }
 
-#myself {
-    height: 750px;
+.myself-lg {
+    height: 500px;
     width: auto;
 }
 
-.name {
-    font-size: 50px;
-    color: rgb(200, 200, 200);
+.myself-xl {
+    height: 800px;
+    width: auto;
 }
 
-.message {
+.red-xl {
+    height: 600px;
+    width: auto;
+}
+
+.greeting-md {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(100, 100, 100);
+}
+
+.greeting-lg {
+    font-size: 15px;
+    text-align: center;
+    color: rgb(100, 100, 100);
+}
+
+.greeting-xl {
+    font-size: 18px;
+    color: rgb(100, 100, 100);
+}
+
+.name-md {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.name-lg {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.name-xl {
+    font-size: 75px;
+    color: white;
+}
+
+.message-md {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(80, 80, 80);
+}
+
+.message-lg {
+    text-align: center;
     font-size: 20px;
     color: rgb(80, 80, 80);
 }
 
-.social-media-icon {
+.message-xl {
+    font-size: 30px;
+    color: rgb(150, 150, 150);
+}
+
+.social-media-icon-xl {
     height: 25px;
     width: auto;
     padding: 10px;
 }
 
-.social-media-button {
+.social-media-icon-md {
+    height: 20px;
+    width: auto;
+    padding: 10px;
+}
+
+.social-media-button-xl {
     cursor: pointer;
     background-color: rgb(230, 230, 230);
     border-radius: 50%;
@@ -40,6 +92,7 @@
     outline: none;   
 }
 
-.social-media-button:hover {
+.social-media-button-xl:hover,
+.social-media-button-md:hover {
     background-color: rgba(180, 180, 180);
 }

@@ -8,13 +8,14 @@
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
 
-
-@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 
 
 $custom-typography-1: mat-typography-config(
-  $font-family: 'Potta One, cursive',
+  $font-family: 'Rubik Mono One, sans-serif',
+  $display-2: mat-typography-level(48px, 56px, 900),
   $headline: mat-typography-level(32px, 48px, 700),
   $body-1: mat-typography-level(16px, 24px, 500)
 );
@@ -25,17 +26,25 @@ $custom-typography-2: mat-typography-config(
   $body-1: mat-typography-level(16px, 24px, 500)
 );
 
-.custom-h1 {
+$custom-typography-3: mat-typography-config(
+  $font-family: 'Comfortaa, cursive',
+  $headline: mat-typography-level(32px, 48px, 700),
+  $body-1: mat-typography-level(16px, 24px, 500)
+);
+
+.custom-font-1 {
   font-size: mat-font-size($custom-typography-1, headline);
   font-family: mat-font-family($custom-typography-1);
 }
 
-.custom-h2 {
-  font-size: mat-font-size($custom-typography-1, title);
-  font-family: mat-font-family($custom-typography-1);
+.custom-nav {
+  font-size: mat-font-size($custom-typography-3, body-1);
+  font-family: mat-font-family($custom-typography-3);
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
-.custom-nav {
+.title {
   font-size: mat-font-size($custom-typography-2, headline);
   font-family: mat-font-family($custom-typography-2);
   font-weight: bold;

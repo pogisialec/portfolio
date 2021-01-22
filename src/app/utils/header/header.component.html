@@ -4,16 +4,17 @@
             <!-- <button mat-icon-button fxHide.gt-sm> -->
             <!-- <mat-icon>menu</mat-icon> -->
         <!-- </button> -->
-        <div fxLayout="row" fxLayoutAlign="start center" fxFill>
-            <div fxFlex fxLayout="row" fxLayoutAlign="center center" fxHide.lt-md>
-                <button class="top-nav-item custom-nav" href="#">HOME</button>
-                <button class="top-nav-item custom-nav" href="#">PROJECT</button>
-                <button class="top-nav-item custom-nav" href="#">EDUCATION</button>
-                <button class="top-nav-item custom-nav" href="#">SKILL</button>
-                <button class="top-nav-item custom-nav" href="#">EXPERIENCE</button>
-                <button class="top-nav-item custom-nav" href="#">ABOUT</button>
-                <button class="top-nav-item custom-nav" href="#">CONTACT</button>
-            </div>
+        <div fxLayout="row" fxLayoutAlign.lg="start center" fxLayoutAlign.md="center center" fxFill fxShow.lg fxHide.lt-md>
+            <!-- <div fxFlex fxLayout="row" fxLayoutAlign.md="start center" fxHide.lt-md> -->
+                <div fxFlex.lg="10"></div>
+                <button class="top-nav-item custom-nav" href="#">home</button>
+                <button class="top-nav-item custom-nav" href="#">project</button>
+                <button class="top-nav-item custom-nav" href="#">education</button>
+                <button class="top-nav-item custom-nav" href="#">skill</button>
+                <button class="top-nav-item custom-nav" href="#">experience</button>
+                <button class="top-nav-item custom-nav" href="#">about</button>
+                <button class="top-nav-item custom-nav" href="#">contact</button>
+            <!-- </div> -->
         </div>
     </mat-toolbar-row>
 </mat-toolbar>

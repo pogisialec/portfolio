@@ -1,30 +1,62 @@
-
-<div id="home">
+<div id="home" fxFlex="100">
     <div fxLayout="row" fxFill>
-        <div class="container-1" fxFlex fxLayoutAlign="row" fxLayoutAlign="none end" fxShow.lg fxHide>
-            <div fxFlex="10"></div>
-            <div><img id="myself" src="assets/images/formal.png"></div>
+        <div fxFlex.lg="45" fxLayout="row" fxLayoutAlign="start end" fxShow.lg fxHide>
+            <div fxFlex fxLayout="row" fxLayoutAlign="start end">
+                <img ngClass.lt-xl="myself-xl" src="assets/images/formal.png">
+            </div>
         </div>
-        <div class="container-2" fxFlex fxLayout="row" fxLayoutAlign="start center" fxFill>
+        <div fxLayout="column" fxFlex fxFill>
+            <div fxFlex.lg="55" fxLayout="row" fxLayoutAlign="end start" fxShow.lg fxHide>
+                <img ngClass.lt-xl="red-xl" src="assets/images/red.png">
+            </div>
+            <div fxFlex.lg="45" fxLayout="row" fxLayoutAlign="start start" fxFill>
+                <div fxLayout="column" fxFill>
+                    <div fxFlex.lg-lt="15"></div>
+                    <div fxFlex fxLayout="column" fxLayoutAlign.lt-lg="center center" fxLayoutAlign.lg="end start">
+                        <span ngClass.lt-xl="greeting-xl" ngClass.lt-lg="greeting-lg" ngClass.lt-md="greeting-md"
+                            class="custom-nav">
+                            &nbsp;HELLO, I'M
+                        </span>
+                        <span ngClass.lt-xl="name-xl" ngClass.lt-lg="name-lg" ngClass.lt-md="name-md"
+                            class="custom-font-1">
+                            ALEC SISON
+                        </span>
+                        <span ngClass.lt-xl="message-xl" ngClass.lt-lg="message-lg" ngClass.lt-md="message-md"
+                            class="custom-font-1">
+                            JAVA DEVELOPER
+                        </span>
+                    </div>
+                    <div fxFlex.lg fxLayout="row" fxLayoutAlign.lg="end end" fxLayoutAlign.lt-lg="center center" fxLayoutGap="10px">
+                        <img src="assets/images/box.png" />
+                        <img src="assets/images/box.png" />
+                        <img src="assets/images/box.png" />
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div fxFlex="5"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container-2" fxFlex.lg="55" fxFlex="100" fxLayout="row" fxLayoutAlign="center center" fxFill>
             <div>
-                <div fxLayout="row" fxLayoutGap="10px">
-                    <button class="social-media-button" fxLayout="row" fxLayoutAlign="center center">
-                        <img src="assets/icons/facebook.png" class="social-media-icon">
+                <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign.lt-xl="start end" fxLayoutAlign.lt-lg="center end">
+                    <button ngClass.lt-xl="social-media-button-xl" fxLayout="row" fxLayoutAlign="center center">
+                        <img src="assets/icons/facebook.png" ngClass.lt-xl="social-media-icon-xl" ngClass.lt-md="social-media-icon-md">
                     </button>
-                    <button class="social-media-button" fxLayout="row" fxLayoutAlign="center center">
-                        <img src="assets/icons/twitter.png" class="social-media-icon">
+                    <button ngClass.lt-xl="social-media-button-xl" fxLayout="row" fxLayoutAlign="center center">
+                        <img src="assets/icons/twitter.png" ngClass.lt-xl="social-media-icon-xl" ngClass.lt-md="social-media-icon-md">
                     </button>
-                    <button class="social-media-button" fxLayout="row" fxLayoutAlign="center center">
-                        <img src="assets/icons/instagram.png" class="social-media-icon">
+                    <button ngClass.lt-xl="social-media-button-xl" fxLayout="row" fxLayoutAlign="center center">
+                        <img src="assets/icons/instagram.png" ngClass.lt-xl="social-media-icon-xl" ngClass.lt-md="social-media-icon-md">
                     </button>
                 </div>
-                <h1 class="name custom-h1">
+                <h1 ngClass.lt-xl="name-xl" ngClass.lt-lg="name-lg" ngClass.lt-md="name-md" class="custom-h1">
                     HELLO. I'M ALEC SISON.
                 </h1>
-                <h2 class="message custom-h2">
+                <h2 ngClass.lt-xl="message-xl" ngClass.lt-lg="message-lg" ngClass.lt-md="message-md" class="custom-h2">
                     WELCOME TO MY PAGE.
                 </h2>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
