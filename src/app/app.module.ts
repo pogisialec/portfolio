@@ -16,13 +16,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { ProjectPageComponent } from './pages/project-page/project-page.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MainPageComponent } from './pages/main-page/main-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomePageComponent,
-    ProjectPageComponent
+    ProjectPageComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,
